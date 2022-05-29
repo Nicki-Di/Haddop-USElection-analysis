@@ -6,6 +6,8 @@ import csv
 cols = csv.reader(sys.stdin)
 next(cols)
 for col in cols:
+    # (kind, Likes, Retweets, Web, iPhone, Android)
+
     # Both
     if (col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump")) and ((
             col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"))):
