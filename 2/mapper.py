@@ -22,11 +22,11 @@ for col in cols:
                 '%s\t%s\t%s\t%s\t%s' % (col[18].lower(), 1, 1, 1, 1))
 
         # Donald Trump
-        if col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump"):
+        elif col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump"):
             print(
                 '%s\t%s\t%s\t%s\t%s' % (col[18].lower(), 0, 1, 0, 1))
 
-            # Joe Biden
-        if col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"):
+        # Joe Biden
+        elif col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"):
             print(
                 '%s\t%s\t%s\t%s\t%s' % (col[18].lower(), 0, 0, 1, 1))

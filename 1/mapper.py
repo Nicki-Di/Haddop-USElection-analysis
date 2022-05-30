@@ -17,14 +17,14 @@ for col in cols:
                                         1 if col[5] == "Twitter for Android" else 0))
 
     # Donald Trump
-    if col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump"):
+    elif col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump"):
         print(
             '%s\t%s\t%s\t%s\t%s\t%s' % ("Donald Trump", col[3], col[4], 1 if col[5] == "Twitter Web App" else 0,
                                         1 if col[5] == "Twitter for iPhone" else 0,
                                         1 if col[5] == "Twitter for Android" else 0))
 
     # Joe Biden
-    if col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"):
+    elif col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"):
         print(
             '%s\t%s\t%s\t%s\t%s\t%s' % ("Joe Biden", col[3], col[4], 1 if col[5] == "Twitter Web App" else 0,
                                         1 if col[5] == "Twitter for iPhone" else 0,
