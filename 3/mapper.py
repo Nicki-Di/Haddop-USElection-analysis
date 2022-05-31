@@ -21,7 +21,7 @@ for col in cols:
             if (col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump")) and ((
                     col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"))):
                 print(
-                    '%s\t%s\t%s\t%s\t%s' % ("new york", 1, 1, 1, 1))
+                    '%s\t%s\t%s\t%s\t%s' % ("new york", 1, 0, 0, 1))
 
             # Donald Trump
             elif col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump"):
@@ -41,7 +41,7 @@ for col in cols:
             if (col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump")) and ((
                     col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"))):
                 print(
-                    '%s\t%s\t%s\t%s\t%s' % ("california", 1, 1, 1, 1))
+                    '%s\t%s\t%s\t%s\t%s' % ("california", 1, 0, 0, 1))
 
             # Donald Trump
             elif col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump"):
