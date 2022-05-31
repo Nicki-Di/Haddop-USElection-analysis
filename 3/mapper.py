@@ -2,7 +2,7 @@
 
 import sys
 import csv
-from datetime import datetime, time
+from datetime import time
 
 start_time = time(9, 0, 0)
 end_time = time(17, 0, 0)
