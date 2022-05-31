@@ -12,9 +12,9 @@ cols = csv.reader(sys.stdin)
 next(cols)
 for col in cols:
     # (State, Both, Biden, Trump, 1 as total)
-    if col[18].lower() in states and start_time < time(int(col[0].split(" ")[1].split(":")[0]),
-                                                       int(col[0].split(" ")[1].split(":")[1]),
-                                                       int(col[0].split(" ")[1].split(":")[2])) < end_time:
+    if col[18].lower() in states and start_time <= time(int(col[0].split(" ")[1].split(":")[0]),
+                                                        int(col[0].split(" ")[1].split(":")[1]),
+                                                        int(col[0].split(" ")[1].split(":")[2])) <= end_time:
         # Both
         if (col[2].lower().__contains__("#trump") or col[2].lower().__contains__("#donaldtrump")) and ((
                 col[2].lower().__contains__("#biden") or col[2].lower().__contains__("#joebiden"))):
